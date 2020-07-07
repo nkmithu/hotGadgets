@@ -1,60 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Gadgets</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d5a24fd54e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-      <!-- NAVIGATION==============-->
+    <!-- NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-toggler-right fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt="" class="img-fluid logo"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-capitalize ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link  " href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="#">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  " href="#">Contact Us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
 
 
-  <nav class="navbar navbar-expand-lg navbar-toggler-right fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""
-          class="img-fluid black-logo"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link  " href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  " href="about.html">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  " href="menu.html">MENU</a>
-          </li>
+    <!--  Banner section -->
 
-          <li class="nav-item">
-            <a class="nav-link  " href="RESERVATION.html">RESERVATION</a>
-          </li>
+    <Section class="banner section-gap" id="banner">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-sm-12  my-auto">
+                    <div id="banner-slider" class="carousel slide carousel-fade" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#banner-slider" data-slide-to="0" class="active"></li>
+                            <li data-target="#banner-slider" data-slide-to="1"></li>
+                            <li data-target="#banner-slider" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="banner-product-details">
+                                            <h2 class="font-40 text-capitalize">Mackbook pro</h2>
+                                            <p class="font-16">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Repudiandae, tenetur. Quasi quod ea illum. Placeat incidunt sunt ad
+                                                officia
+                                                neque sit, accusantium nemo earum maxime dignissimos nulla distinctio
+                                                numquam sint.</p>
+                                            <button class="btn btn-black">Buy Now <i
+                                                    class="fas fa-arrow-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <img src="imgs/banner-products/product-1.png" alt=""
+                                            class="img-fluid banner-img animated zoomIn animated zoomIn">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="banner-product-details">
+                                            <h2 class="font-40 text-capitalize">Mackbook pro</h2>
+                                            <p class="font-16">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Repudiandae, tenetur. Quasi quod ea illum. Placeat incidunt sunt ad
+                                                officia
+                                                neque sit, accusantium nemo earum maxime dignissimos nulla distinctio
+                                                numquam sint.</p>
+                                            <button class="btn btn-black">Buy Now <i
+                                                    class="fas fa-arrow-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <img src="imgs/banner-products/slider-1.png" alt=""
+                                            class="img-fluid banner-img animated zoomIn">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="banner-product-details">
+                                            <h2 class="font-40 text-capitalize">Mackbook pro</h2>
+                                            <p class="font-16">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Repudiandae, tenetur. Quasi quod ea illum. Placeat incidunt sunt ad
+                                                officia
+                                                neque sit, accusantium nemo earum maxime dignissimos nulla distinctio
+                                                numquam
+                                                sint.</p>
+                                            <button class="btn btn-black">Buy Now <i
+                                                    class="fas fa-arrow-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <img src="imgs/banner-products/slider-3.png" alt=""
+                                            class="img-fluid banner-img animated zoomIn">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-          <li class="nav-item">
-            <a class="nav-link  " href="contact.html">CONTACT</a>
-          </li>
+                    </div>
+                </div>
 
-          <li class="nav-item">
+            </div>
 
-          </li>
+        </div>
+    </Section>
+
+    <!--  Smartphone section -->
+    <section class="smartphone section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-header d-flex justify-content-between my-5 flext-wrap">
+                    <div class="font-32 font-500 text-left">Smartphone</div>
+                    <div class="see-all">
+                        <a href="" class="font-21 text-yel">See all</a>
+                    </div>
+                    </div>
+                    <div class="card-deck">
+                        <div class="card product-card">
+                          <img class="card-img-top product-img" src="imgs/phone/phone-1.png" alt="Card image cap">
+                          <div class="card-body text-center ">
+                            <h5 class="card-title font-24 font-500">Redmi</h5>
+                            <p class="card-text text-muted">Some quck example text to build on the card</p>
+                            <p class="card-text font-24 font-500">$799</p>
+                            <button class="btn btn-black mt-2">Buy Now <i
+                                class="fas fa-arrow-right ml-2"></i></button>
+                          </div>
+                        </div>
+                        <div class="card product-card">
+                            <img class="card-img-top product-img" src="imgs/phone/phone-2.png" alt="Card image cap">
+                          <div class="card-body  text-center ">
+                            <h5 class="card-title font-24">iPhone 11 pro</h5>
+                            <p class="card-text text-muted">Some quck example text to build on the card</p>
+                            <p class="card-text font-24 font-500">$999</p>
+                            <button class="btn btn-black mt-2">Buy Now <i
+                                class="fas fa-arrow-right ml-2"></i></button>
+                          </div>
+                        </div>
+                        <div class="card product-card">
+                            <img class="card-img-top product-img" src="imgs/phone/phone-3.png" alt="Card image cap">
+                          <div class="card-body  text-center ">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text text-muted">Some quck example text to build on the card</p>
+                            <p class="card-text font-24 font-500">$699</p>
+                            <button class="btn btn-black mt-2">Buy Now <i
+                                class="fas fa-arrow-right ml-2"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--  Laptop section -->
+    <section class="laptop section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-header d-flex justify-content-between my-5 flext-wrap">
+                    <div class="font-32 font-500 text-left">Laptop</div>
+                    <div class="see-all">
+                        <a href="" class="font-21 text-yel">See all</a>
+                    </div>
+                    </div>
+                    <div class="card-deck">
+                        <div class="card product-card">
+                          <img class="card-img-top product-img" src="imgs/phone/phone-1.png" alt="Card image cap">
+                          <div class="card-body text-center ">
+                            <h5 class="card-title font-24 font-500">Redmi</h5>
+                            <p class="card-text text-muted">Some quck example text to build on the card</p>
+                            <p class="card-text font-24 font-500">$999</p>
+                            <button class="btn btn-black mt-2">Buy Now <i
+                                class="fas fa-arrow-right ml-2"></i></button>
+                          </div>
+                        </div>
+                        <div class="card product-card">
+                            <img class="card-img-top product-img" src="imgs/phone/phone-2.png" alt="Card image cap">
+                          <div class="card-body  text-center ">
+                            <h5 class="card-title font-24">iPhone 11 pro</h5>
+                            <p class="card-text text-muted">Some quck example text to build on the card</p>
+                            <p class="card-text font-24 font-500">$999</p>
+                            <button class="btn btn-black mt-2">Buy Now <i
+                                class="fas fa-arrow-right ml-2"></i></button>
+                          </div>
+                        </div>
+                        <div class="card product-card">
+                            <img class="card-img-top product-img" src="imgs/phone/phone-3.png" alt="Card image cap">
+                          <div class="card-body  text-center ">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text text-muted">Some quck example text to build on the card</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <button class="btn btn-black mt-2">Buy Now <i
+                                class="fas fa-arrow-right ml-2"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-
-
-
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery-3.3.1.min.js"></script>
-
+    <script src="js/fontawesome.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
